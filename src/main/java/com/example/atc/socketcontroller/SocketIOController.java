@@ -58,7 +58,7 @@ public class SocketIOController {
              * Send the same payload to user
              */
 
-            log.info(message.getSenderName()+" user send message to user "+message.getTargetUserName()+" and message is "+message.getMessage());
+            log.info(message.getSenderName()+" user send message to user "+message.getTargetUserName()+" and message is "+message.getFlightInfo());
             socketServer.getBroadcastOperations().sendEvent(message.getTargetUserName(),client, message);
 
 
