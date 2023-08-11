@@ -5,9 +5,9 @@ import lombok.Data;
 @Data
 public class FlightInfo {
     private String flightName;
-    private String top;
-    private String left;
-    private String right;
-    private String down;
-    private String speed;
+    private int top;
+    private int left;
+    private int right;
+    private int down;
+    private int speed;
 }
